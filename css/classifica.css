@@ -1,0 +1,74 @@
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin: 2rem auto;
+    border-radius: 20px;
+    color: white;
+    overflow: hidden; /* Nasconde le celle che fuoriescono dagli angoli stondati */
+    animation: slide-up 1s ease-out; /* Aggiungi l'animazione */
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(50px); /* Parte dal basso */
+        opacity: 0; /* Inizia con opacità 0 */
+    }
+    100% {
+        transform: translateY(0); /* Si sposta verso la posizione 0 (in alto) */
+        opacity: 1; /* Opacità finale 1 */
+    }
+}
+
+
+thead{
+    background-color: darkcyan;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(88, 179, 175);
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightseagreen;
+}
+
+td, th{
+    /*color: white;*/
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.classifica-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.classifica-item {
+    flex: 1;
+    margin: 10px;
+}
+
+tr.loggato {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+td>span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0.1em;
+    border-radius: 50%;
+}
+
+span.primo {
+    background-color: gold;
+}
+
+span.secondo {
+    background-color: silver;
+}
+
+span.terzo {
+    background-color: #cd7f32;
+}

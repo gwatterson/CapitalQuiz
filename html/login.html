@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Guelfo Watterson">
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" href="../img/logo.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo.png" class="logo" alt="Logo" onclick="location.href='index.html'">
+            <div id="menu">
+                <button class="b-menu" onclick="location.href='index.html'">Home</button>
+                <button class="b-menu" onclick="location.href='login.html'">Login</button>
+                <button class="b-menu" onclick="location.href='classifica.html'">Classifica</button>
+            </div>
+        </header>
+        <div class="corpo">
+            <form action="#" method="post" autocomplete="on" id="login-form">
+                <p class="username">
+                    <label for="username">
+                        Username:
+                    </label>
+                    <br>
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                </p>
+                <p class="password">
+                    <label for="pwd">
+                        Password:
+                    </label>
+                    <br>
+                    <input type="password" id="pwd" name="pwd" required minlength="8" maxlength="20">
+                </p>
+                <p id="errore-login">
+                </p>
+                <a id="recupera">
+                </a>
+                <input type="submit" value="Login">
+                <a href="signup.html">
+                    Non hai un account? Registrati
+                </a>
+            </form>
+        </div>
+        <footer>
+            <p>
+                Progetto anno 2024/2025 - Guelfo Watterson 636075 - Corso di Progettazione Web - Università di Pisa<br>
+                <a href='documentazione.html'>Manuale di gioco</a>
+            </p>
+        </footer>
+        <script src="../js/handle_login.js"></script>
+        <script src="../js/login.js"></script>
+    </body>
+</html>

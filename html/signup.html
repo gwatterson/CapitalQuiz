@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Guelfo Watterson">
+        <title>Registrazione</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="icon" href="../img/logo.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo.png" class="logo" alt="Logo" onclick="location.href='index.html'">
+            <div id="menu">
+                <button class="b-menu" onclick="location.href='index.html'">Home</button>
+                <button class="b-menu" onclick="location.href='login.html'">Login</button>
+                <button class="b-menu" onclick="location.href='classifica.html'">Classifica</button>
+            </div>
+        </header>
+        <div class="corpo">
+            <form action="#" method="post" autocomplete="on" id="signup-form">
+                <p class="username">
+                    <label for="username">
+                        Username:
+                    </label>
+                    <br>
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                </p>
+                <p class="mail">
+                    <label for="mail">
+                        Mail:
+                    </label>
+                    <br>
+                    <input type="email" id="mail" name="mail" required minlength="6" maxlength="30">
+                </p>
+                <p class="password">
+                    <label for="pwd">
+                        Password:
+                    </label>
+                    <br>
+                    <input type="password" id="pwd" name="pwd" required minlength="8" maxlength="20">
+                </p>
+                <p class="password">
+                    <label for="pwd2">
+                        Inserisci nuovamente la password:
+                    </label>
+                    <br>
+                    <input type="password" id="pwd2" name="pwd2" required minlength="8" maxlength="20">
+                </p>
+                <p class="domanda">
+                    <label for="domanda">
+                        Scegli una domanda di sicurezza:
+                    </label>
+                    <select id="domanda" name="domanda">
+                        <option value="film">
+                            Qual &egrave; il nome del tuo film preferito?
+                        </option>
+                        <option value="auto">
+                            Qual &egrave; il nome della tua prima auto?
+                        </option>
+                        <option value="data">
+                            Qual &egrave; una data importante per te?
+                        </option>
+                    </select>
+                </p>
+                <p class="risposta">
+                    <label for="risposta">
+                        Risposta:
+                    </label>
+                    <br>
+                    <input type="text" id="risposta" name="risposta" required minlength="3" maxlength="30">
+                </p>
+                <p id="errore-signup">
+                </p>
+                <input type="submit" value="Conferma">
+                <a href="login.html">
+                    Hai gi&agrave; un account? Accedi
+                </a>
+            </form>
+        </div>
+        <footer>
+            <p>
+                Progetto anno 2024/2025 - Guelfo Watterson 636075 - Corso di Progettazione Web - Università di Pisa<br>
+                <a href='documentazione.html'>Manuale di gioco</a>
+            </p>
+        </footer>
+        <script src="../js/handle_login.js"></script>
+        <script src="../js/signup.js"></script>
+    </body>
+</html>

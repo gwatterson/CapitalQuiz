@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Guelfo Watterson">
+        <title>Capitali del Mondo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" href="../img/logo.png" type="image/png">
+        <script src="../js/popup.js"></script>
+        <script src="../js/index.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <header id="header">
+            <img src="../img/logo.png" class="logo" alt="Logo" onclick="location.href='index.html'">
+            <div id="menu">
+                <button class="b-menu" onclick="location.href='index.html'">Home</button>
+                <button class="b-menu" onclick="location.href='login.html'">Login</button>
+                <button class="b-menu" onclick="location.href='classifica.html'">Classifica</button>
+                <img class="utente hidden" id="img-utente" src="../img/user.jpg" alt="utente">
+                <div id="popup" class="popup hidden">
+                    <p id="p-username"></p>
+                    <p id="p-record-cd"></p>
+                    <p id="p-record-sop"></p>
+                    <a href="#" id="p-logout">Logout</a>
+                </div>
+            </div>
+        </header>
+        <div class="corpo">
+            <button class="avvio" onclick="location.href='gioco.html'">Inizia a giocare</button>
+            <div class="div-tasti-piccoli">
+                <button class="navigazione in-index" onclick="location.href='documentazione.html'">Manuale di gioco</button>
+                <button class="navigazione in-index" onclick="location.href='curiosita.html'">Curiosità sulle capitali</button>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>
+                Progetto anno 2024/2025 - Guelfo Watterson 636075 - Corso di Progettazione Web - Università di Pisa<br>
+                <a href='documentazione.html'>Manuale di gioco</a>
+            </p>
+        </footer>
+    </body>
+</html>

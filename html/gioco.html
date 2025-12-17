@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Guelfo Watterson">
+        <title>Gioca</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/gioco.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="icon" href="../img/logo.png" type="image/png">
+        <script src="../js/inizializza.js"></script>
+        <script src="../js/popup.js"></script>
+        <style></style>
+    </head>
+    <body>
+        <header id="header">
+            <img src="../img/logo.png" class="logo" alt="Logo" onclick="location.href='index.html'">
+            <div id="menu">
+                <button class="b-menu" onclick="location.href='index.html'">Home</button>
+                <button class="b-menu" onclick="location.href='login.html'">Login</button>
+                <button class="b-menu" onclick="location.href='classifica.html'">Classifica</button>
+                <img class="utente hidden" id="img-utente" src="../img/user.jpg" alt="utente">
+                <div id="popup" class="popup hidden">
+                    <p id="p-username"></p>
+                    <p id="p-record-cd"></p>
+                    <p id="p-record-sop"></p>
+                    <a href="#" id="p-logout">Logout</a>
+                </div>
+            </div>
+        </header>
+        <div class="corpo">
+            <div id="inizio" class="hidden">
+                <button class="modalita" id="countdown" value="countdown" title="Mettiti alla prova in 30 secondi">MODALITÀ COUNTDOWN</button>
+                <button class="modalita" id="sopravvivenza" value="sopravvivenza" title="Ti sono concesse tre vite, ne perdi una ad ogni errore">MODALITÀ SOPRAVVIVENZA</button>
+                <button class="modalita" id="impara" value="impara" title="Nessun punteggio, impara senza competere">IMPARA LE CAPITALI</button>
+            </div>
+            <div id="quiz" class="hidden">
+                <p class="p-grande" id="stato"></p>
+                <div id="capitali">
+                    <div class="opzione-container">
+                        <button class="opzione" id="risposta1"></button>
+                        <button class="opzione" id="risposta2"></button>
+                    </div>
+                    <div class="opzione-container">
+                        <button class="opzione" id="risposta3"></button>
+                        <button class="opzione" id="risposta4"></button>
+                    </div>
+                </div>
+                <button class="navigazione" id="stop">INTERROMPI</button>
+            </div>
+            <div id="risultato" class="hidden">
+                <p class="p-grande" id="risultatoTesto"></p>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>
+                Progetto anno 2024/2025 - Guelfo Watterson 636075 - Corso di Progettazione Web - Università di Pisa<br>
+                <a href='documentazione.html'>Manuale di gioco</a>
+            </p>
+        </footer>
+        <script src="../js/quiz.js"></script>
+        <script src="../js/countdown.js"></script>
+        <script src="../js/impara.js"></script>
+        <script src="../js/sopravvivenza.js"></script>
+    </body>
+</html>

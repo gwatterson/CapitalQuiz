@@ -1,0 +1,83 @@
+body {
+    background-image: url('../img/sfondo.jpg');
+    background-position: top center;
+    background: linear-gradient(to bottom, rgb(210, 210, 210), rgba(255, 255, 255, 0)), url('../img/sfondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+button.avvio {
+    height: 5rem;
+    margin-top: 4rem;
+    font-size: 28px;
+    opacity: 0;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-name: slideFromUp;
+}
+
+button.in-index {
+    margin: 1rem;
+    opacity: 0;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Gli elementi pari appaiono da sinistra */
+button.in-index:nth-child(even) {
+    animation-name: slideFromLeft;
+}
+
+/* Gli elementi dispari appaiono da destra */
+button.in-index:nth-child(odd) {
+    animation-name: slideFromRight;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button.in-index:hover, button.avvio:hover {
+    border: 6px solid lightgrey;
+}
+
+.div-tasti-piccoli {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

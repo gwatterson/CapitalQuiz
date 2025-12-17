@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Guelfo Watterson">
+        <title>Documentazione</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/documentazione.css">
+        <link rel="icon" href="../img/logo.png" type="image/png">
+        <script src="../js/popup.js"></script>
+        <script src="../js/index.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <img src="../img/logo.png" class="logo" alt="Logo" onclick="location.href='index.html'">
+            <div id="menu">
+                <button class="b-menu" onclick="location.href='index.html'">Home</button>
+                <button class="b-menu" onclick="location.href='login.html'">Login</button>
+                <button class="b-menu" onclick="location.href='classifica.html'">Classifica</button>
+                <img class="utente hidden" id="img-utente" src="../img/user.jpg" alt="utente">
+                <div id="popup" class="popup hidden">
+                    <p id="p-username"></p>
+                    <p id="p-record-cd"></p>
+                    <p id="p-record-sop"></p>
+                    <a href="#" id="p-logout">Logout</a>
+                </div>
+            </div>
+        </header>
+        <div class="corpo">
+            <h1>Manuale - Capital Quiz</h1>
+            <h2>Presentazione del gioco</h2>
+            <p>Capital Quiz offre tre diverse modalità di gioco per imparare le capitali del mondo. <br>
+                Inoltre, la registrazione dei punteggi in classifica permette di confrontarsi con gli altri giocatori e di migliorare il proprio record personale.<br>
+                L'applicazione permette di giocare anche agli utenti non registrati, ma in questo caso non è possibile salvare i punteggi in classifica e visualizzare il proprio record personale.
+            </p>
+            <h2>Modalità di gioco</h2>
+                <ul>
+                    <li><strong>Modalità Countdown:</strong>
+                        L'utente ha a disposizione 30 secondi per rispondere a più domande possibili. Sono assegnati 100 punti per ogni risposta
+                        corretta e sono sottratti 50 punti per ogni risposta errata.<br>
+                        Inoltre, sono assegnati quattro tipi di bonus:<br>
+                        <ul>
+                            <li>Moltiplicatore x1.1 dopo 10 risposte corrette</li>
+                            <li>Moltiplicatore x1.25 dopo 20 risposte corrette</li>
+                            <li>Moltiplicatore x1.5 dopo 30 risposte corrette</li>
+                            <li>5 secondi di tempo extra ogni 10 risposte corrette consecutive</li>
+                        </ul>
+                        L'utente non vede in tempo reale se ha risposto correttamente o meno, ma scopre il punteggio solo alla fine della partita.
+                    </li>
+                    <li><strong>Modalità Sopravvivenza:</strong>
+                        L'utente ha a disposizione tre vite. Il gioco termina quando le vite sono terminate.<br>
+                        Sono assegnati 100 punti per ogni risposta corretta, mentre viene sottratta una vita in caso di risposta errata o se l'utente non risponde alla domanda entro 10 secondi.<br>
+                        Inoltre, ogni 10 risposte corrette consecutive l'utente recupera una vita, se ne aveva persa almeno una in precedenza.
+                    </li>
+                    <li><strong>Modalità Impara:</strong>
+                        L'utente può imparare le capitali del mondo senza competere, non è assegnato alcun punteggio.<br>
+                        In caso di risposta errata, la casella corrispondente si colora di rosso e l'utente non può passare alla domanda successiva finché non risponde correttamente.<br>
+                    </li>
+                </ul>
+            <h2>Curiosità</h2>
+            <p>
+                Nella pagina Curiosità possono essere lette alcune curiosità interessanti sulle capitali del mondo.
+            </p>
+            <h2>Registrazione e login</h2>
+            <p>
+                L'applicazione offre agli utenti la possibilità di registrarsi, scegliendo un username e una password.<br>
+                Una volta effettuata la registrazione, l'utente può effettuare il login inserendo le proprie credenziali.<br>
+                In caso di password dimenticata, l'utente può richiedere la modifica della password rispondendo alla domanda di sicurezza configuarata al momento della registrazione<br>
+                Il login consente di salvare i propri punteggi in classifica al termine di ogni partita in modalità Countdown e Sopravvivenza, e di visualizzare il proprio record personale per
+                ciascuna delle due modalità cliccando sull'icona in alto a destra.<br>
+                I punteggi non vengono salvati in automatico. L'utente può scegliere, dopo ogni partita, se salvare il punteggio conseguito oppure iniziare una nuova partita scartando il punteggio.<br>
+                <i>Nota:</i> se l'utente inizia una partita senza aver effettuato il login, il punteggio non potrà essere salvato. Perciò, è consigliato
+                effettuare il login prima di iniziare una partita se si intende salvare il punteggio successivamente.
+            </p>
+            <h2>Classifica</h2>
+            <p>
+                Nella pagina Classifica sono visualizzati i migliori 10 punteggi salvati dagli utenti registrati in ciascuna delle due modalità di gioco a punti.<br>
+                I punteggi conseguiti dall'utente attualmente loggato sono evidenziati in grassetto.<br>
+            </p>
+        </div>
+        <footer>
+            <p>
+                Progetto anno 2024/2025 - Guelfo Watterson 636075 - Corso di Progettazione Web - Università di Pisa<br>
+                <a href='documentazione.html'>Manuale di gioco</a>
+            </p>
+        </footer>
+    </body>
+</html>

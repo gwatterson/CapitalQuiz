@@ -1,0 +1,166 @@
+body {
+    background-image: url('../img/sfondo.jpg');
+    background-position: top center;
+    background: linear-gradient(to bottom, rgb(210, 210, 210), rgba(255, 255, 255, 0)), url('../img/sfondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (min-width: 918px) {
+    #inizio {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 918px) {
+    #inizio {
+        max-width: 85%;
+    }
+}
+
+p#timer{
+    width: 80px;
+    height: 80px;
+    line-height: 5.5rem;
+    font-size: 25px;
+    text-align: center;
+    margin: 1em auto;
+    color: lightgrey;
+    background-image: url('../img/timer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+        30% {
+            color: transparent;
+        }
+}
+
+.p-grande {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.opzione-container{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+button.opzione.corretta{
+    background-color: green;
+}
+
+button.opzione.errata{
+    background-color: brown;
+}
+
+button.opzione{
+    background-color: lightseagreen;
+    height: 4rem;
+}
+
+button.modalita {
+    height: 4rem;
+    opacity: 0;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Gli elementi pari appaiono da sinistra */
+button.modalita:nth-child(even) {
+    animation-name: slideFromLeft;
+}
+
+/* Gli elementi dispari appaiono da destra */
+button.modalita:nth-child(odd) {
+    animation-name: slideFromRight;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+button.modalita:hover, button.opzione:hover{
+    border: 6px solid lightgrey;
+}
+
+#start{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#inizio {
+    margin: 3rem auto;
+}
+
+.corpo>p {
+    text-align: center;
+    font-size: 20px;
+    color: darkslategrey;
+}
+
+p#bonus {
+    color: darkgreen;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+div#vite{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+div.vita{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 3px solid lightgrey;
+    background-color: green;
+}
+
+div.vita.persa{
+    background-color: brown;
+}
+
+div #capitali{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,42 @@
+body {
+    background-image: url('../img/sfondo.jpg');
+    background-position: top center;
+    background: linear-gradient(to bottom, rgb(210, 210, 210), rgba(255, 255, 255, 0)), url('../img/sfondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#box-curiosita {
+    background-image: url('../img/sfondo-curiosita.jpg');
+    background-position: top center;
+    background: linear-gradient(to bottom, rgb(210, 210, 210), rgba(255, 255, 255, 0)), url('../img/sfondo-curiosita.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 60%;
+    height: 8rem;
+    padding: 2rem;
+    border: 3px solid darkgrey;
+    margin: auto;
+}
+
+#capitale {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkslategrey;
+    text-align: center;
+    margin: 1rem;
+}
+
+#curiosita {
+    font-size: 1.2rem;
+    color: darkslategrey;
+    text-align: center;
+    margin: 1rem;
+}
+
+button.b-curiosita {
+    height: 4rem;
+    max-width: 25rem;
+}
